@@ -1,7 +1,20 @@
+body {
+  background-color: #c41c1c;
+}
+
 .title {
   text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 4em;
+  color: whitesmoke;
+  font-weight: 10000;
 }
 
 .subtitle {
   text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  margin-top: -45px;
+  color: whitesmoke;
 }
