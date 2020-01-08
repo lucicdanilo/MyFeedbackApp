@@ -7,21 +7,41 @@ class Website extends Component {
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for Website:</h2>
           <div class="designRate">
-            <p class="titleForSlider">Ocijeni dizajn sajta:</p>
             <div class="slidecontainer">
-              <input type="range" min="0" max="10" step="1" />
+              <label for="designSlider">Ocijeni dizajn Website-a:</label>
+              <input
+                type="range"
+                name="designSlider"
+                min="0"
+                max="10"
+                step="1"
+              />
             </div>
           </div>
           <div class="performanceRate">
-            <p class="titleForSlider">Ocijena performansi:</p>
             <div class="slidecontainer">
-              <input type="range" min="0" max="10" step="1" />
+              <label for="performanceSlider">
+                Ocijeni performanse Website-a:
+              </label>
+              <input
+                type="range"
+                name="performanceSlider"
+                min="0"
+                max="10"
+                step="1"
+              />
             </div>
           </div>
           <div class="contentRate">
-            <p class="titleForSlider">Ocijeni sadrzaj sajta:</p>
             <div class="slidecontainer">
-              <input type="range" min="0" max="10" step="1" />
+              <label for="contentSlider">Ocijeni sadrzaj Website:</label>
+              <input
+                type="range"
+                name="contentSlider"
+                min="0"
+                max="10"
+                step="1"
+              />
             </div>
           </div>
           <div calss="textSubmitReview">

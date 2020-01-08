@@ -7,15 +7,27 @@ class CV extends Component {
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for CV:</h2>
           <div class="designRate">
-            <p class="titleForSlider">Ocijeni dizajn CV-a:</p>
             <div class="slidecontainer">
-              <input type="range" min="0" max="10" step="1" />
+              <label for="designSlider">Ocijeni dizajn CV-a:</label>
+              <input
+                type="range"
+                name="designSlider"
+                min="0"
+                max="10"
+                step="1"
+              />
             </div>
           </div>
           <div class="contentRate">
-            <p class="titleForSlider">Ocijeni sadrzaj CV-a:</p>
             <div class="slidecontainer">
-              <input type="range" min="0" max="10" step="1" />
+              <label for="contentSlider">Ocijeni sadrazaj CV-a:</label>
+              <input
+                type="range"
+                name="contentSlider"
+                min="0"
+                max="10"
+                step="1"
+              />
             </div>
           </div>
           <div calss="textSubmitReview">

@@ -5,8 +5,6 @@ import Projects from "./Projects";
 import Website from "./Website";
 import CV from "./CV";
 
-var categories = ["Projects", "Website", "CV"];
-
 function App() {
   return (
     <Router>
