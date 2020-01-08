@@ -8,7 +8,9 @@ class CV extends Component {
           <h2 class="dynamicSubtitle">Feedback for CV:</h2>
           <div class="designRate">
             <div class="slidecontainer">
-              <label for="designSlider">Ocijeni dizajn CV-a:</label>
+              <label class="designSliderLabel" for="designSlider">
+                Ocijeni dizajn CV-a:
+              </label>
               <input
                 type="range"
                 name="designSlider"

@@ -14,16 +14,17 @@ function App() {
           I build this app for learning React, improving my old projects and
           finding ideas for future projects as well!
         </h4>
-        <li>
-          <Link to={"/projects"}>Projects</Link>
-        </li>
-        <li>
-          <Link to={"/website"}>Website</Link>
-        </li>
-        <li>
-          <Link to={"/cv"}>CV</Link>
-        </li>
-
+        <div class="categoriesLinks">
+          <li>
+            <Link to={"/projects"}>Projects</Link>
+          </li>
+          <li>
+            <Link to={"/website"}>Website</Link>
+          </li>
+          <li>
+            <Link to={"/cv"}>CV</Link>
+          </li>
+        </div>
         <Switch>
           <Route path="/projects" component={Projects} />
           <Route path="/website" component={Website} />
