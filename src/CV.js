@@ -15,7 +15,7 @@ class CV extends Component {
                 type="range"
                 name="designSlider"
                 min="0"
-                max="10"
+                max="100"
                 step="1"
               />
             </div>
@@ -27,7 +27,7 @@ class CV extends Component {
                 type="range"
                 name="contentSlider"
                 min="0"
-                max="10"
+                max="100"
                 step="1"
               />
             </div>

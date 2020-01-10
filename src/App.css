@@ -53,6 +53,10 @@ form {
   font-family: "Work Sans", sans-serif;
 }
 
+.designRate {
+  margin-top: 1.5%;
+}
+
 textarea {
   margin: 1%;
 }
@@ -74,6 +78,11 @@ textarea {
   border-radius: 0.5rem;
 }
 
+.submitButton:hover {
+  color: #c41c1c;
+  background-color: #fff;
+}
+
 footer {
   text-align: center;
   color: white;
@@ -84,7 +93,7 @@ input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 25%;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 input[type="range"]:focus {
   outline: none;
@@ -110,9 +119,12 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -8px;
 }
-input[type="range"]:focus::-webkit-slider-runnable-track {
+
+input[type="range"]:focus::-webkit-slider-thumb {
   background: #2c3e50;
+  border: 1.5px solid #fff;
 }
+
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 8.4px;
@@ -191,10 +203,74 @@ li {
   border: 2px solid #fff;
   display: inline;
   padding: 0.3%;
-  border-radius: 7px;
+  border-radius: 6px;
+}
+
+li:hover {
+  border: 2px solid #c41c1c;
+  background-color: #fff;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+  padding: auto;
+}
+
+a:hover {
+  color: #c41c1c;
+}
+
+/* Select */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.choseProject {
+  margin: auto;
+  width: 25%;
+  position: relative;
+  display: flex;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.choseProject::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.choseProject:hover::after {
+  color: #f39c12;
 }
