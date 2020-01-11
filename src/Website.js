@@ -14,7 +14,7 @@ class Website extends Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for Website:</h2>
           <div class="designRate">
@@ -61,12 +61,7 @@ class Website extends Component {
               performance, content and etc.
             </textarea>
           </div>
-          <input
-            type="submit"
-            class="submitButton"
-            value="Submit"
-            onClick={this.handleSubmit}
-          />
+          <input type="submit" class="submitButton" value="Submit" />
         </div>
       </form>
     );

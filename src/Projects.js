@@ -42,7 +42,7 @@ class Projects extends Component {
         );
       }, this);
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for Projects:</h2>
           <div class="choseProject">
@@ -94,12 +94,7 @@ class Projects extends Component {
               new!
             </textarea>
           </div>
-          <input
-            type="submit"
-            class="submitButton"
-            value="Submit"
-            onClick={this.handleSubmit}
-          />
+          <input type="submit" class="submitButton" value="Submit" />
         </div>
       </form>
     );

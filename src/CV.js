@@ -12,7 +12,7 @@ class CV extends Component {
   }
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for CV:</h2>
           <div class="designRate">
@@ -46,12 +46,7 @@ class CV extends Component {
               Here you can send me ideas for better CV on design and content.
             </textarea>
           </div>
-          <input
-            type="submit"
-            class="submitButton"
-            value="Submit"
-            onClick={this.handleSubmit}
-          />
+          <input type="submit" class="submitButton" value="Submit" />
         </div>
       </form>
     );
