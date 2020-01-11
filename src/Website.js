@@ -1,6 +1,17 @@
 import React, { Component } from "react";
+import Thanks from "./Thanks";
+import ReactDOM from "react-dom";
 
 class Website extends Component {
+  componentDidMount() {
+    document.getElementById("wellcomeImage").style.display = "none";
+  }
+
+  handleSubmit(event) {
+    // ovdje pozivati backend
+    ReactDOM.render(<Thanks />, document.getElementById("root"));
+  }
+
   render() {
     return (
       <form>
@@ -50,7 +61,12 @@ class Website extends Component {
               performance, content and etc.
             </textarea>
           </div>
-          <input type="submit" class="submitButton" value="Submit" />
+          <input
+            type="submit"
+            class="submitButton"
+            value="Submit"
+            onClick={this.handleSubmit}
+          />
         </div>
       </form>
     );

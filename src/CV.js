@@ -1,6 +1,15 @@
 import React, { Component } from "react";
+import Thanks from "./Thanks";
+import ReactDOM from "react-dom";
 
 class CV extends Component {
+  componentDidMount() {
+    document.getElementById("wellcomeImage").style.display = "none";
+  }
+  handleSubmit(event) {
+    // ovdje pozivati backend
+    ReactDOM.render(<Thanks />, document.getElementById("root"));
+  }
   render() {
     return (
       <form>
@@ -37,7 +46,12 @@ class CV extends Component {
               Here you can send me ideas for better CV on design and content.
             </textarea>
           </div>
-          <input type="submit" class="submitButton" value="Submit" />
+          <input
+            type="submit"
+            class="submitButton"
+            value="Submit"
+            onClick={this.handleSubmit}
+          />
         </div>
       </form>
     );

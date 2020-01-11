@@ -272,5 +272,17 @@ select {
 }
 /* Transition */
 .choseProject:hover::after {
-  color: #f39c12;
+  color: #f7a708;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#wellcomeImage {
+  background-color: #c41c1c;
+  padding: 4%;
 }

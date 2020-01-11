@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Thanks from "./Thanks";
+import ReactDOM from "react-dom";
 
 class Projects extends Component {
   constructor(props) {
@@ -8,7 +10,13 @@ class Projects extends Component {
     };
   }
 
+  handleSubmit(event) {
+    // ovdje pozivati backend
+    ReactDOM.render(<Thanks />, document.getElementById("root"));
+  }
+
   componentDidMount() {
+    document.getElementById("wellcomeImage").style.display = "none";
     this.setState({
       projects: [
         { id: "general", name: "General" },
@@ -86,7 +94,12 @@ class Projects extends Component {
               new!
             </textarea>
           </div>
-          <input type="submit" class="submitButton" value="Submit" />
+          <input
+            type="submit"
+            class="submitButton"
+            value="Submit"
+            onClick={this.handleSubmit}
+          />
         </div>
       </form>
     );
