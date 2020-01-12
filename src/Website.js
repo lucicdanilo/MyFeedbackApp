@@ -10,7 +10,16 @@ class Website extends Component {
     document.getElementById("title").innerHTML = "Thank you for feedback!";
     document.getElementById("subtitle").innerHTML =
       "You can leave feedback on other categories and projects if you want.";
-    console.log(event);
+
+    var websitesFeedback = {
+      design: event.target.designSlider.value,
+      performance: event.target.performanceSlider.value,
+      content: event.target.contentSlider.value,
+      text: event.target.textFeedback.value
+    };
+
+    var websitesFeedbackJSON = JSON.stringify(websitesFeedback);
+    console.log(websitesFeedbackJSON);
   }
 
   render() {
@@ -57,7 +66,7 @@ class Website extends Component {
             </div>
           </div>
           <div calss="textSubmitReview">
-            <textarea rows="6" cols="50">
+            <textarea name="textFeedback" rows="6" cols="50">
               Here you can send me ideas for better website on design,
               performance, content and etc.
             </textarea>

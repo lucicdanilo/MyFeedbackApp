@@ -9,7 +9,15 @@ class CV extends Component {
     document.getElementById("title").innerHTML = "Thank you for feedback!";
     document.getElementById("subtitle").innerHTML =
       "You can leave feedback on other categories and projects if you want.";
-    console.log(event);
+
+    var cvFeedback = {
+      design: event.target.designSlider.value,
+      content: event.target.contentSlider.value,
+      text: event.target.textFeedback.value
+    };
+
+    var cvFeedbackJSON = JSON.stringify(cvFeedback);
+    console.log(cvFeedbackJSON);
   }
   render() {
     return (
@@ -43,7 +51,7 @@ class CV extends Component {
             </div>
           </div>
           <div calss="textSubmitReview">
-            <textarea rows="6" cols="50">
+            <textarea name="textFeedback" rows="6" cols="50">
               Here you can send me ideas for better CV on design and content.
             </textarea>
           </div>

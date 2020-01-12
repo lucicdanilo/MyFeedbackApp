@@ -13,7 +13,17 @@ class Projects extends Component {
     document.getElementById("title").innerHTML = "Thank you for feedback!";
     document.getElementById("subtitle").innerHTML =
       "You can leave feedback on other categories and projects if you want.";
-    console.log(event);
+
+    var projectFeedback = {
+      project: event.target.selectProject.value,
+      design: event.target.designSlider.value,
+      performance: event.target.performanceSlider.value,
+      content: event.target.contentSlider.value,
+      text: event.target.textFeedback.value
+    };
+
+    var projectFeedbackJSON = JSON.stringify(projectFeedback);
+    console.log(projectFeedbackJSON);
   }
 
   componentDidMount() {
@@ -47,7 +57,7 @@ class Projects extends Component {
         <div class="boxRate">
           <h2 class="dynamicSubtitle">Feedback for Projects:</h2>
           <div class="choseProject">
-            <select>{projectsList}</select>
+            <select name="selectProject">{projectsList}</select>
           </div>
           <div class="designRate">
             <div class="slidecontainer">
@@ -90,7 +100,7 @@ class Projects extends Component {
             </div>
           </div>
           <div calss="textSubmitReview">
-            <textarea rows="6" cols="50">
+            <textarea name="textFeedback" rows="6" cols="50">
               Here you can send me ideas for better old projects or ideas for
               new!
             </textarea>
