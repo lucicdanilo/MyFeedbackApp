@@ -9,8 +9,10 @@ function App() {
   return (
     <Router>
       <div>
-        <h1 class="title">Wellcome to my Feedback App</h1>
-        <h4 class="subtitle">
+        <h1 class="title" id="title">
+          Wellcome to my Feedback App
+        </h1>
+        <h4 class="subtitle" id="subtitle">
           I build this app for learning React, improving my old projects and
           finding ideas for future projects as well!
         </h4>

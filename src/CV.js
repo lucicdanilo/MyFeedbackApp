@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import Thanks from "./Thanks";
-import ReactDOM from "react-dom";
 
 class CV extends Component {
   componentDidMount() {
     document.getElementById("wellcomeImage").style.display = "none";
   }
   handleSubmit(event) {
-    // ovdje pozivati backend
-    ReactDOM.render(<Thanks />, document.getElementById("root"));
+    event.preventDefault();
+    document.getElementById("title").innerHTML = "Thank you for feedback!";
+    document.getElementById("subtitle").innerHTML =
+      "You can leave feedback on other categories and projects if you want.";
+    console.log(event);
   }
   render() {
     return (
