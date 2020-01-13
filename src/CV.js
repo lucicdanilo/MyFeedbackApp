@@ -17,7 +17,10 @@ class CV extends Component {
     };
 
     var cvFeedbackJSON = JSON.stringify(cvFeedback);
-    console.log(cvFeedbackJSON);
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://feedbackappapi.glitch.me/cvFeedback", true);
+    request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    request.send(cvFeedbackJSON);
   }
   render() {
     return (
