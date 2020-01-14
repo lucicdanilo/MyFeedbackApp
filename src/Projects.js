@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Popup from "reactjs-popup";
 
 class Projects extends Component {
   constructor(props) {
@@ -112,7 +113,15 @@ class Projects extends Component {
               new!
             </textarea>
           </div>
-          <input type="submit" class="submitButton" value="Submit" />
+          <Popup
+            trigger={open => (
+              <input type="submit" class="submitButton" value="Submit" />
+            )}
+            position="right center"
+            closeOnDocumentClick
+          >
+            <span id="popupSpan">Feedback was sent</span>
+          </Popup>
         </div>
       </form>
     );
