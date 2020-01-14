@@ -4,8 +4,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Projects from "./Projects";
 import Website from "./Website";
 import CV from "./CV";
+import $ from "jquery";
 
 function App() {
+  $(window).on("load", function() {
+    $(".loader-wrapper")
+      .delay(1500)
+      .fadeOut("slow");
+  });
   return (
     <Router>
       <div>
