@@ -22,7 +22,7 @@ class Website extends Component {
     var request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://feedbackappapi.glitch.me/websiteFeedback",
+      "https://cors-anywhere.herokuapp.com/https://feedbackappapi.glitch.me/websiteFeedback",
       true
     );
     request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");

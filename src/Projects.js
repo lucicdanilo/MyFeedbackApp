@@ -26,7 +26,7 @@ class Projects extends Component {
     var request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://feedbackappapi.glitch.me/projectFeedback",
+      "https://cors-anywhere.herokuapp.com/https://feedbackappapi.glitch.me/projectFeedback",
       true
     );
     request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
