@@ -70,7 +70,7 @@ class Projects extends Component {
           <div class="designRate">
             <div class="slidecontainer">
               <label class="designSliderLabel" for="designSlider">
-                Ocijeni dizajn projekta:
+                Design:
               </label>
               <input
                 type="range"
@@ -83,9 +83,7 @@ class Projects extends Component {
           </div>
           <div class="performanceRate">
             <div class="slidecontainer">
-              <label for="performanceSlider">
-                Ocijeni performanse Projekta:
-              </label>
+              <label for="performanceSlider">Performance:</label>
               <input
                 type="range"
                 name="performanceSlider"
@@ -97,7 +95,7 @@ class Projects extends Component {
           </div>
           <div class="contentRate">
             <div class="slidecontainer">
-              <label for="contentSlider">Ocijeni sadrazaj projekta:</label>
+              <label for="contentSlider">Content:</label>
               <input
                 type="range"
                 name="contentSlider"

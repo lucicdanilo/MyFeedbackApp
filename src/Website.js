@@ -37,7 +37,7 @@ class Website extends Component {
           <h2 class="dynamicSubtitle">Feedback for Website:</h2>
           <div class="designRate">
             <div class="slidecontainer">
-              <label for="designSlider">Ocijeni dizajn Website-a:</label>
+              <label for="designSlider">Design:</label>
               <input
                 type="range"
                 name="designSlider"
@@ -49,9 +49,7 @@ class Website extends Component {
           </div>
           <div class="performanceRate">
             <div class="slidecontainer">
-              <label for="performanceSlider">
-                Ocijeni performanse Website-a:
-              </label>
+              <label for="performanceSlider">Pefrormance:</label>
               <input
                 type="range"
                 name="performanceSlider"
@@ -63,7 +61,7 @@ class Website extends Component {
           </div>
           <div class="contentRate">
             <div class="slidecontainer">
-              <label for="contentSlider">Ocijeni sadrzaj Website:</label>
+              <label for="contentSlider">Content:</label>
               <input
                 type="range"
                 name="contentSlider"

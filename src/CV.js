@@ -35,7 +35,7 @@ class CV extends Component {
           <div class="designRate">
             <div class="slidecontainer">
               <label class="designSliderLabel" for="designSlider">
-                Ocijeni dizajn CV-a:
+                Design:
               </label>
               <input
                 type="range"
@@ -48,7 +48,7 @@ class CV extends Component {
           </div>
           <div class="contentRate">
             <div class="slidecontainer">
-              <label for="contentSlider">Ocijeni sadrazaj CV-a:</label>
+              <label for="contentSlider">Content:</label>
               <input
                 type="range"
                 name="contentSlider"
