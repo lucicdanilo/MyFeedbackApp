@@ -2,7 +2,8 @@
 
 
 This is my first React application. You can me leave feedback, app is fully functional. 
-You can leave feedback on my projects, CV and website. [My Portfolio](https://bp.etf.ac.me/users/danilol/portfolio/)
+You can leave feedback on my projects, CV and website. [Live version of application](https://feedbackapp.netlify.com/) 
+[My Portfolio](https://bp.etf.ac.me/users/danilol/portfolio/)
 
 I build API for backend and you can find code here: 
 ```
