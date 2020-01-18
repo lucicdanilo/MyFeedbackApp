@@ -1,7 +1,10 @@
 # My Feedback Applications 
 
 
-This is my first React application. You can me leave feedback, app is fully functional. I build API for backend and you can find code here: 
+This is my first React application. You can me leave feedback, app is fully functional. 
+You can leave feedback on my projects, CV and website. [My Portfolio](https://bp.etf.ac.me/users/danilol/portfolio/)
+
+I build API for backend and you can find code here: 
 ```
 https://github.com/lucicdanilo/MyRecipeAPI
 ```
